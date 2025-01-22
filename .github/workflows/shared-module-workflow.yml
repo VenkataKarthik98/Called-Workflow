@@ -1,7 +1,11 @@
-name: .NET 6 Build
+name: Shared Workflow
 
 on:
-  workflow_dispatch:
+  workflow_call:
+    inputs:
+      example_input:
+        required: true
+        type: string
 
 jobs:
   build:

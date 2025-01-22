@@ -4,18 +4,18 @@ on:
   workflow_dispatch:
 
 jobs:
-  Checkout-Code:
-    runs-on: self-hosted
-    env:
-      DOTNET_INSTALL_DIR: C:\Users\2000087361\Documents\Nexus_Assignement\Dotnet
+  # Checkout-Code:
+  #   runs-on: self-hosted
+  #   env:
+  #     DOTNET_INSTALL_DIR: C:\Users\2000087361\Documents\Nexus_Assignement\Dotnet
 
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
-      with:
-        repository: VenkataKarthik98/dotnet6-hello-world
-        ref: master
-        path: VenkataKarthik98/Called-Workflow
+  #   steps:
+  #   - name: Checkout code
+  #     uses: actions/checkout@v3
+  #     with:
+  #       repository: VenkataKarthik98/dotnet6-hello-world
+  #       ref: master
+  #       path: VenkataKarthik98/Called-Workflow
 
   call-shared-workflow:
     uses: VenkataKarthik98/dotnet6-hello-world/.github/workflows/dotnet6-build.yml@master

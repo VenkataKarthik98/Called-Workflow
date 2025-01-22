@@ -1,4 +1,4 @@
-name: Shared Workflow
+name: Call Shared Workflow
 
 on:
   workflow_dispatch:
